@@ -1,5 +1,6 @@
-export default function GifListItem ({data}) {
-    data = gifs
+import { Card } from "react-bootstrap"
+
+export default function GifListItem ({ gifs }) {
     return (
         <Card>
          <div style={{ marginTop: '20px' }}>

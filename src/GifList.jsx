@@ -1,9 +1,9 @@
-import GifListItem from '.GifListItem'
+import GifListItem from './GifListItem'
 
-export default function GifList({data}) {
+export default function GifList({ gifs }) {
   return (
     <>
-    <GifListItem data={data}/>
+    <GifListItem gifs={gifs}/>
     <GifListItem/>
     <GifListItem/>
     <GifListItem/>

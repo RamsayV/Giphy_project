@@ -37,7 +37,7 @@ function SearchBar() {
         <Button variant="outline-success" type="submit">Search</Button>
       </Form>
       </div>
-      <GifList data={data}/>
+      <GifList gifs={gifs}/>
           </>
   );
 }
