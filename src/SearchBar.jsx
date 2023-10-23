@@ -25,20 +25,21 @@ function SearchBar() {
 
   return (
     <>
-    <div>
-      <Form inline onSubmit={(e) => { e.preventDefault(); handleSearch(); }}>
-        <FormControl 
-          type="text" 
-          placeholder="Search for GIFs" 
-          className="mr-sm-2" 
-          value={query}
-          onChange={handleInputChange}
+      <div>
+        <Form inline onSubmit={(e) => { e.preventDefault(); handleSearch(); }}>
+          <FormControl
+            type="text"
+            placeholder="Search for GIFs"
+            className="mr-sm-2"
+            value={query}
+            onChange={handleInputChange}
           />
-        <Button variant="outline-success" type="submit">Search</Button>
-      </Form>
+          <Button variant="outline-success" type="submit">Search</Button>
+        </Form>
       </div>
-      <GifList data={data}/>
-          </>
+      <GifList gifs={gifs} />
+
+    </>
   );
 }
 
