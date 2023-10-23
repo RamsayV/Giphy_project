@@ -24,7 +24,8 @@ function SearchBar() {
   };
 
   return (
-    <>
+    < >
+    <h1>Search for Gifs</h1>
       <div>
         <Form inline onSubmit={(e) => { e.preventDefault(); handleSearch(); }}>
           <FormControl
